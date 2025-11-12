@@ -1,0 +1,12 @@
+.sliderIndicator {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+
+  @media (max-width: 1000px) {
+    top: unset;
+    transform: none;
+    bottom: 2rem;
+  }
+}

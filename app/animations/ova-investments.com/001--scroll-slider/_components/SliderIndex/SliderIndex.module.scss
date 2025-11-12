@@ -1,0 +1,21 @@
+.sliderIndex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-white);
+
+  .marker {
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-white);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .index {
+    padding: 0.35rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+}

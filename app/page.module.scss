@@ -1,0 +1,18 @@
+.homePage {
+  padding: 1rem 2rem;
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    list-style: none;
+
+    .project {
+      padding: 0.35rem 0;
+    }
+  }
+}

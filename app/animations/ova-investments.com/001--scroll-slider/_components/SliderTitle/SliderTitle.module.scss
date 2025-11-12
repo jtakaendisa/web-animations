@@ -1,0 +1,16 @@
+.sliderTitle {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+  width: 50%;
+  color: var(--color-white);
+
+  @media (max-width: 1000px) {
+    top: 5rem;
+    left: 0;
+    transform: none;
+    width: 100%;
+    padding: 2rem;
+  }
+}
