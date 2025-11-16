@@ -1,6 +1,5 @@
 import { Geist_Mono, Inter } from 'next/font/google';
 
-import ProjectLabel from '@/components/ProjectLabel/ProjectLabel';
 import TitleBlock from './_components/TitleBlock/TitleBlock';
 import Slider from './_components/Slider/Slider';
 
@@ -21,8 +20,6 @@ const ScrollSliderPage = () => {
     <main
       className={`${geistMono.variable} ${inter.variable} ${styles.scrollSliderPage}`}
     >
-      <ProjectLabel />
-
       <TitleBlock>
         Scroll to explore the rhythm of still images that move quietly between story and
         sensation.

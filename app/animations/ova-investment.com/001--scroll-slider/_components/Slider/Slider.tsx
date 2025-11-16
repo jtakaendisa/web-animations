@@ -26,7 +26,7 @@ const Slider = () => {
         />
       ))}
 
-      <SliderTitle title={slides[currentIndex].title} />
+      <SliderTitle key={currentIndex} title={slides[currentIndex].title} />
 
       <SliderIndicator
         ref={sliderRef}

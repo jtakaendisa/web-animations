@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import { Lenis } from '../components/lenis';
 import { GSAPRuntime } from '../components/gsap/runtime';
+import ProjectLabel from '@/components/ProjectLabel/ProjectLabel';
 
 import './globals.scss';
 
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <ProjectLabel />
         {children}
         <Lenis root options={{}} />
         <GSAPRuntime />

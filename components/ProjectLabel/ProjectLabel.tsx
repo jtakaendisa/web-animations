@@ -17,6 +17,8 @@ const ProjectLabel = () => {
   const info = parts[parts.length - 1];
   const [number, label] = info.split('--');
 
+  if (pathname === '/') return null;
+
   return (
     <section className={`${geistMono.variable} ${styles.projectLabel}`}>
       <div className={styles.experiment}>

@@ -1,12 +1,11 @@
 'use client';
 
 import { RefObject, useEffect } from 'react';
-import gsap from 'gsap/all';
+import gsap from 'gsap';
 
 import { SplitText } from '@/components/gsap/split-text';
 
 export const useSliderTitle = (
-  title: string,
   titleRef: RefObject<HTMLHeadingElement | null>,
   splitTextRef: RefObject<SplitText | null>
 ) => {
@@ -23,7 +22,6 @@ export const useSliderTitle = (
         autoSplit: true,
         mask: 'lines',
         onSplit: (self) => {
-          title.style.opacity = '1';
           gsap.from(self.lines, {
             yPercent: 100,
             autoAlpha: 0,
@@ -41,7 +39,7 @@ export const useSliderTitle = (
       }
       gsap.killTweensOf(title);
     };
-  }, [title, titleRef, splitTextRef]);
+  }, [titleRef, splitTextRef]);
 
   return null;
 };

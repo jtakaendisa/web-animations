@@ -14,7 +14,7 @@ const SliderTitle = ({ title }: Props) => {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   const splitTextRef = useRef<InstanceType<typeof SplitText> | null>(null);
 
-  useSliderTitle(title, titleRef, splitTextRef);
+  useSliderTitle(titleRef, splitTextRef);
 
   return (
     <div className={styles.sliderTitle}>

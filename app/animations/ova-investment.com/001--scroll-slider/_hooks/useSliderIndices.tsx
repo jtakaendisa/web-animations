@@ -1,6 +1,6 @@
 'use client';
 
-import gsap from 'gsap/all';
+import gsap from 'gsap';
 
 export const useSliderIndices = () => {
   const handleSnapToIndex = (index: number) => {
