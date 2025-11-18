@@ -1,0 +1,23 @@
+.clientName {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.clientName::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.15rem;
+  background-color: var(--color-white);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-out;
+}
+
+.clientName:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

@@ -19,6 +19,11 @@ const ScrollToPlugin = dynamic(
   { ssr: false }
 );
 
+const CustomEase = dynamic(
+  () => import('./custom-ease').then((m) => m.GSAPCustomEase),
+  { ssr: false }
+);
+
 export function GSAPRuntime() {
   return (
     <>
@@ -26,6 +31,7 @@ export function GSAPRuntime() {
       <ScrollTrigger />
       <SplitText />
       <ScrollToPlugin />
+      <CustomEase />
     </>
   );
 }

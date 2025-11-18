@@ -1,0 +1,15 @@
+.clientList {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  width: 80%;
+  margin-bottom: 8rem;
+  mix-blend-mode: difference;
+  z-index: 2;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}

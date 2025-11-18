@@ -23,7 +23,7 @@ const SliderImage = ({ src, alt, inProp }: Props) => {
   return (
     <Transition
       in={inProp}
-      timeout={1000}
+      timeout={{ enter: 750, exit: 450 }}
       mountOnEnter
       unmountOnExit
       nodeRef={nodeRef}

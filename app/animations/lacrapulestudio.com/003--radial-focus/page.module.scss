@@ -1,0 +1,29 @@
+.radialFocusPage {
+  --color-gray: #acacac;
+
+  font-family: var(--font-dm-sans);
+  background-color: var(--color-white);
+
+  span {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--color-white);
+  }
+
+  p {
+    display: inline-block;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-family: var(--font-dm-mono);
+    font-size: 0.85rem;
+    font-weight: 550;
+    line-height: 1;
+  }
+
+  @media (max-width: 1000px) {
+    span {
+      font-size: 2rem;
+    }
+  }
+}
