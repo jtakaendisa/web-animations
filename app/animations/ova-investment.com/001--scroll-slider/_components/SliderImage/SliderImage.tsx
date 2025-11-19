@@ -5,8 +5,6 @@ import Image, { StaticImageData } from 'next/image';
 import { Transition } from 'react-transition-group';
 import gsap from 'gsap';
 
-import { useSliderImage } from '../../_hooks/useSliderImage';
-
 import styles from './SliderImage.module.scss';
 
 interface Props {
@@ -18,12 +16,10 @@ interface Props {
 const SliderImage = ({ src, alt, inProp }: Props) => {
   const nodeRef = useRef<HTMLDivElement | null>(null);
 
-  useSliderImage(nodeRef);
-
   return (
     <Transition
       in={inProp}
-      timeout={{ enter: 750, exit: 450 }}
+      timeout={{ enter: 800, exit: 500 }}
       mountOnEnter
       unmountOnExit
       nodeRef={nodeRef}
