@@ -24,6 +24,10 @@ const CustomEase = dynamic(
   { ssr: false }
 );
 
+const UseGSAP = dynamic(() => import('./useGSAP').then((m) => m.GSAPuseGSAP), {
+  ssr: false,
+});
+
 export function GSAPRuntime() {
   return (
     <>
@@ -32,6 +36,7 @@ export function GSAPRuntime() {
       <SplitText />
       <ScrollToPlugin />
       <CustomEase />
+      <UseGSAP />
     </>
   );
 }

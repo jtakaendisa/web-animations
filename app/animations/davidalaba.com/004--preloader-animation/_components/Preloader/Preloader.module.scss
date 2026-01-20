@@ -1,0 +1,114 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-black);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 2;
+  overflow: hidden;
+
+  .preloaderProgressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background-color: var(--color-white);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .preloaderImages {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    height: 25rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+
+    .preloaderImage {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+      overflow: hidden;
+
+      & > img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: scale(2);
+      }
+    }
+  }
+
+  .preloaderCopy {
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    color: var(--color-white);
+  }
+}
+
+.preloaderHeader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transform: translateY(60vh);
+  transform-origin: top;
+  z-index: 2;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+
+  .divider {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 0;
+    }
+
+    .preloaderImages {
+      top: 35%;
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .preloaderCopy {
+      width: 80%;
+    }
+
+    .preloaderHeader {
+      transform: translateY(50vh);
+
+      & > a {
+        font-size: 4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.preloaderAnimationPage {
+  font-family: var(--font-manrope);
+  background-color: var(--color-white);
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: -0.5rem;
+  }
+
+  p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 550;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-family: var(--font-agdasima);
+    font-size: 7.5rem;
+    font-weight: 600;
+    line-height: 0.9;
+  }
+}

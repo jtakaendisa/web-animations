@@ -11,4 +11,8 @@ export const projects = [
     title: 'Radial Focus',
     href: './animations/lacrapulestudio.com/003--radial-focus',
   },
+  {
+    title: 'Preloader Animation',
+    href: './animations/davidalaba.com/004--preloader-animation',
+  },
 ];
