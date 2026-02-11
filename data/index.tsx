@@ -15,4 +15,8 @@ export const projects = [
     title: 'Preloader Animation',
     href: './animations/davidalaba.com/004--preloader-animation',
   },
+  {
+    title: 'Marquee Horizontal Image Scroll',
+    href: './animations/wonjyou.com/005--marquee-horizontal-image-scroll',
+  },
 ];

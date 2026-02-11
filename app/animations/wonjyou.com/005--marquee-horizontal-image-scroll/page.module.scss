@@ -1,0 +1,175 @@
+.marqueeHorizontalImageScrollPage {
+  --color-light: #edf1e8;
+  --color-dark: #101010;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
+
+  h1,
+  h3 {
+    font-weight: 500;
+    line-height: 1.125;
+  }
+
+  h1 {
+    font-size: 4rem;
+    letter-spacing: -0.075rem;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    letter-spacing: -0.025rem;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero,
+  .outro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    align-content: center;
+    text-align: center;
+
+    h1 {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  .outro {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+  }
+
+  .marquee {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+
+    .marqueeWrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-5deg);
+      width: 150%;
+      height: 100%;
+
+      .marqueeImages {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-75%, -50%);
+        width: 200%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        .marqueeImage {
+          flex: 1;
+          width: 100%;
+          aspect-ratio: 5/3;
+        }
+      }
+    }
+  }
+
+  .horizontalScroll {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    .horizontalScrollWrapper {
+      position: relative;
+      width: 300%;
+      height: 100vh;
+      display: flex;
+
+      .horizontalSlide {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+
+        .col {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          h3,
+          img {
+            width: 75%;
+          }
+        }
+
+        .col:nth-child(1) {
+          flex: 3;
+        }
+
+        .col:nth-child(2) {
+          flex: 2;
+        }
+      }
+
+      .horizontalSlide:not(.horizontalSpacer) {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    h1 {
+      font-size: 2.25rem;
+      letter-spacing: -0.05rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .hero,
+    .outro {
+      h1 {
+        width: 100%;
+      }
+    }
+
+    .marqueeWrapper {
+      width: 300%;
+    }
+
+    .horizontalSlide {
+      padding: 4rem;
+      flex-direction: column-reverse;
+      gap: 2rem;
+
+      .col {
+        h3 {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .col:nth-child(1) {
+        align-items: flex-start;
+      }
+    }
+  }
+}

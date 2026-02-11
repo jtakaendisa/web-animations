@@ -24,7 +24,7 @@ const ProjectLabel = () => {
       <div className={styles.experiment}>
         <span>Experiment {number}</span>
       </div>
-      <span className={styles.label}>[ {label.replace('-', ' ')} ]</span>
+      <span className={styles.label}>[ {label.replaceAll('-', ' ')} ]</span>
     </section>
   );
 };

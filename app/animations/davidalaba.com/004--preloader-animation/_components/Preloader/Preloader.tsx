@@ -73,7 +73,7 @@ const Preloader = () => {
       gsap.set(headerLines, { yPercent: 100 });
 
       const preloaderImageElsInnerImgs = gsap.utils.toArray(
-        'img'
+        'img',
       ) as unknown as HTMLImageElement[];
 
       const tl = gsap.timeline({ delay: 0.25 });
@@ -94,7 +94,7 @@ const Preloader = () => {
           ease: 'hop2',
           stagger: 0.75,
         },
-        '-=5'
+        '-=5',
       );
 
       tl.to(
@@ -105,7 +105,7 @@ const Preloader = () => {
           ease: 'hop2',
           stagger: 0.75,
         },
-        '-=5.25'
+        '-=5.25',
       );
 
       tl.to(
@@ -116,7 +116,7 @@ const Preloader = () => {
           ease: 'hop2',
           stagger: 0.1,
         },
-        '-=5.5'
+        '-=5.5',
       );
 
       tl.to(
@@ -127,7 +127,7 @@ const Preloader = () => {
           ease: 'hop2',
           stagger: 0.025,
         },
-        '-=5'
+        '-=5',
       );
 
       tl.to(
@@ -137,7 +137,7 @@ const Preloader = () => {
           duration: 1,
           ease: 'hop2',
         },
-        '-=1.5'
+        '-=1.5',
       );
 
       tl.to(
@@ -148,7 +148,7 @@ const Preloader = () => {
           ease: 'hop2',
           stagger: 0.1,
         },
-        '-=2'
+        '-=2',
       );
 
       tl.to(
@@ -206,7 +206,7 @@ const Preloader = () => {
             });
           },
         },
-        '-=2.5'
+        '-=2.5',
       );
 
       tl.to(
@@ -216,7 +216,7 @@ const Preloader = () => {
           duration: 1.75,
           ease: 'hop2',
         },
-        '-=0.5'
+        '-=0.5',
       );
 
       tl.to(
@@ -227,7 +227,7 @@ const Preloader = () => {
           ease: 'power4.out',
           stagger: 0.1,
         },
-        '-=0.75'
+        '-=0.75',
       );
 
       tl.to(dividerEls, {

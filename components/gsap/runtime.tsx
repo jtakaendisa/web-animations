@@ -7,7 +7,7 @@ const GSAP = dynamic(() => import('./index').then((m) => m.GSAP), { ssr: false }
 
 const ScrollTrigger = dynamic(
   () => import('./scroll-trigger').then((m) => m.GSAPScrollTrigger),
-  { ssr: false }
+  { ssr: false },
 );
 
 const SplitText = dynamic(() => import('./split-text').then((m) => m.GSAPSplitText), {
@@ -16,13 +16,15 @@ const SplitText = dynamic(() => import('./split-text').then((m) => m.GSAPSplitTe
 
 const ScrollToPlugin = dynamic(
   () => import('./scroll-to-plugin').then((m) => m.GSAPScrollToPlugin),
-  { ssr: false }
+  { ssr: false },
 );
 
 const CustomEase = dynamic(
   () => import('./custom-ease').then((m) => m.GSAPCustomEase),
-  { ssr: false }
+  { ssr: false },
 );
+
+const Flip = dynamic(() => import('./flip').then((m) => m.GSAPFlip), { ssr: false });
 
 const UseGSAP = dynamic(() => import('./useGSAP').then((m) => m.GSAPuseGSAP), {
   ssr: false,
@@ -36,6 +38,7 @@ export function GSAPRuntime() {
       <SplitText />
       <ScrollToPlugin />
       <CustomEase />
+      <Flip />
       <UseGSAP />
     </>
   );
